@@ -20,6 +20,16 @@ const GradientText = styled('span')({
   WebkitTextFillColor: 'transparent',
 });
 
+const ImageContainer = styled(Box)({
+  width: '250px', // Adjust size as needed
+  height: '350px',
+  borderRadius: '10%',
+  overflow: 'hidden',
+  marginLeft: 'auto', // Adjust spacing as needed
+  flexShrink: 0,
+});
+
+
 const Home = () => {
   const particlesInit = useCallback(async engine => {
     await loadSlim(engine);
@@ -133,6 +143,13 @@ const Home = () => {
             </Button>
           </motion.div>
         </Box>
+        <ImageContainer>
+            <img
+              src="image/photo.jpg" // Replace with the path to your photo
+              alt="Aishwarya Jain"
+              style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+            />
+          </ImageContainer>
       </StyledContainer>
     </Box>
   );
