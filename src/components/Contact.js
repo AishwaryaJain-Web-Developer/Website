@@ -58,7 +58,7 @@ const Contact = () => {
     // Use EmailJS to send the email
     emailjs.send(
       'service_0d2yeqd', // Replace with your EmailJS service ID
-      'template_kvnctzj', // Replace with your EmailJS template ID
+      'template_qpcds44', // Replace with your EmailJS template ID
       formData,
       'eIExPiGJNutfjnNjM' // Replace with your EmailJS user ID
     )
@@ -164,7 +164,9 @@ const Contact = () => {
                   Send Message
                 </Typography>
 
-                <form onSubmit={handleSubmit}>
+                <form 
+                // onSubmit={handleSubmit}
+                >
                   <Grid container spacing={3}>
                     <Grid item xs={12} sm={6}>
                       <StyledTextField
