@@ -4,6 +4,7 @@ import Particles from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim";
 import { motion } from 'framer-motion';
 import { styled } from '@mui/material/styles';
+import { Link } from 'react-scroll';
 
 const StyledContainer = styled(Container)({
   minHeight: '100vh',
@@ -23,6 +24,13 @@ const Home = () => {
   const particlesInit = useCallback(async engine => {
     await loadSlim(engine);
   }, []);
+
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <Box id="home" sx={{ bgcolor: '#0A0A0A', position: 'relative' }}>
@@ -111,6 +119,7 @@ const Home = () => {
             <Button 
               variant="outlined"
               size="large"
+              onClick={scrollToContact}
               sx={{ 
                 color: '#4CAF50',
                 borderColor: '#4CAF50',

@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { Container, Typography, Box, Grid, TextField, Button, Paper } from '@mui/material';
 import { motion } from 'framer-motion';
 import { styled } from '@mui/material/styles';
-import { Phone, Email, LocationOn, LinkedIn } from '@mui/icons-material';
+import { Phone, Email, LocationOn, LinkedIn ,  } from '@mui/icons-material';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 const StyledTextField = styled(TextField)(({ theme }) => ({
   '& .MuiOutlinedInput-root': {
@@ -99,7 +100,6 @@ const Contact = () => {
                 <ContactItem>
                   <LocationOn />
                   <Typography>
-                    Balchandra Upwan, Punawale,<br />
                     Pune, Maharashtra(411033)
                   </Typography>
                 </ContactItem>
@@ -114,6 +114,20 @@ const Contact = () => {
                       style={{ color: 'inherit', textDecoration: 'none' }}
                     >
                       LinkedIn Profile
+                    </a>
+                  </Typography>
+                </ContactItem>
+
+                <ContactItem>
+                  <GitHubIcon />
+                  <Typography>
+                    <a 
+                      href="https://github.com/AishwaryaJain-Web-Developer"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ color: 'inherit', textDecoration: 'none' }}
+                    >
+                      GitHub
                     </a>
                   </Typography>
                 </ContactItem>
