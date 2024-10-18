@@ -4,6 +4,8 @@ import { motion } from 'framer-motion';
 import { styled } from '@mui/material/styles';
 import { Phone, Email, LocationOn, LinkedIn ,  } from '@mui/icons-material';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import emailjs from 'emailjs-com';
+
 
 const StyledTextField = styled(TextField)(({ theme }) => ({
   '& .MuiOutlinedInput-root': {
@@ -52,8 +54,23 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Add your form submission logic here
-    console.log(formData);
+
+    // Use EmailJS to send the email
+    emailjs.send(
+      'service_0d2yeqd', // Replace with your EmailJS service ID
+      'template_kvnctzj', // Replace with your EmailJS template ID
+      formData,
+      'eIExPiGJNutfjnNjM' // Replace with your EmailJS user ID
+    )
+    .then((response) => {
+      console.log('Message sent successfully', response.status, response.text);
+      alert('Message sent successfully');
+      setFormData({ name: '', email: '', message: '' });
+    })
+    .catch((error) => {
+      console.error('Failed to send the message', error);
+      alert('Failed to send the message');
+    });
   };
 
   return (
