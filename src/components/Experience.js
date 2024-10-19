@@ -69,7 +69,7 @@ const Experience = () => {
               <StyledPaper>
                 <Box sx={{ display: 'flex', alignItems: 'center', mb: 3, flexWrap: 'wrap' }}>
                   <CompanyLogo 
-                    src="image/logo.svg" 
+                    src="image/Logo.svg" 
                     alt="Repos Energy Logo"
                   />
                   <Box>
