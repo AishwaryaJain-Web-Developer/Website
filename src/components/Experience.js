@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Typography, Box, Paper, Grid } from '@mui/material';
 import { motion } from 'framer-motion';
 import { styled } from '@mui/material/styles';
-import { Work, CheckCircleOutline } from '@mui/icons-material';
+import { CheckCircleOutline } from '@mui/icons-material';
 
 const StyledPaper = styled(Paper)(({ theme }) => ({
   padding: theme.spacing(4),
@@ -19,8 +19,18 @@ const StyledPaper = styled(Paper)(({ theme }) => ({
     width: '4px',
     height: '100%',
     background: 'linear-gradient(45deg, #4CAF50, #2196F3)',
-  }
+  },
 }));
+
+const CompanyLogo = styled('img')({
+  width: '80px',
+  height: '80px',
+  objectFit: 'contain',
+  marginRight: '20px',
+  backgroundColor: '#fff', // Add background color for better visibility
+  padding: '5px', // Optional padding for spacing
+  borderRadius: '10px', // Optional rounded corners
+});
 
 const Experience = () => {
   const achievements = [
@@ -31,7 +41,7 @@ const Experience = () => {
     "Integrated Backend APIs: Designed and implemented backend API integrations",
     "Managed Third-Party Integrations: Successfully managed third-party integrations",
     "Implemented Payment Gateway: Integrated and configured payment gateway solutions",
-    "Implemented Agile Methodologies: Successfully implemented agile methodologies in project development"
+    "Implemented Agile Methodologies: Successfully implemented agile methodologies in project development",
   ];
 
   return (
@@ -57,8 +67,11 @@ const Experience = () => {
               transition={{ duration: 0.8 }}
             >
               <StyledPaper>
-                <Box sx={{ display: 'flex', alignItems: 'center', mb: 3 }}>
-                  <Work sx={{ color: '#4CAF50', mr: 2, fontSize: 30 }} />
+                <Box sx={{ display: 'flex', alignItems: 'center', mb: 3, flexWrap: 'wrap' }}>
+                  <CompanyLogo 
+                    src="image/logo.svg" 
+                    alt="Repos Energy Logo"
+                  />
                   <Box>
                     <Typography variant="h5" sx={{ fontWeight: 600 }}>
                       Associate Frontend Engineer
