@@ -2,10 +2,9 @@ import React, { useState } from 'react';
 import { Container, Typography, Box, Grid, TextField, Button, Paper } from '@mui/material';
 import { motion } from 'framer-motion';
 import { styled } from '@mui/material/styles';
-import { Phone, Email, LocationOn, LinkedIn ,  } from '@mui/icons-material';
+import { Phone, Email, LocationOn, LinkedIn, } from '@mui/icons-material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import emailjs from 'emailjs-com';
-
 
 const StyledTextField = styled(TextField)(({ theme }) => ({
   '& .MuiOutlinedInput-root': {
@@ -44,6 +43,7 @@ const Contact = () => {
     email: '',
     message: '',
   });
+  
 
   const handleChange = (e) => {
     setFormData({
@@ -56,21 +56,22 @@ const Contact = () => {
     e.preventDefault();
 
     // Use EmailJS to send the email
-    emailjs.send(
-      'service_0d2yeqd', // Replace with your EmailJS service ID
-      'template_qpcds44', // Replace with your EmailJS template ID
-      formData,
-      'eIExPiGJNutfjnNjM' // Replace with your EmailJS user ID
-    )
-    .then((response) => {
-      console.log('Message sent successfully', response.status, response.text);
-      alert('Message sent successfully');
-      setFormData({ name: '', email: '', message: '' });
-    })
-    .catch((error) => {
-      console.error('Failed to send the message', error);
-      alert('Failed to send the message');
-    });
+    emailjs
+      .send(
+        'service_0d2yeqd', // Replace with your EmailJS service ID
+        'template_6zzswaf', // Replace with your EmailJS template ID
+        formData,
+        'eIExPiGJNutfjnNjM' // Replace with your EmailJS user ID
+      )
+      .then((response) => {
+        console.log('Message sent successfully', response.status, response.text);
+        alert('Message sent successfully!');
+        setFormData({ name: '', email: '', message: '' }); // Clear the form
+      })
+      .catch((error) => {
+        console.error('Failed to send the message', error);
+        alert('Failed to send the message. Please try again later.');
+      });
   };
 
   return (
@@ -102,29 +103,23 @@ const Contact = () => {
 
                 <ContactItem>
                   <Phone />
-                  <Typography>
-                    +91 8349160698
-                  </Typography>
+                  <Typography>+91 8349160698</Typography>
                 </ContactItem>
 
                 <ContactItem>
                   <Email />
-                  <Typography>
-                    aishwaryajn321@gmail.com
-                  </Typography>
+                  <Typography>aishwaryajn321@gmail.com</Typography>
                 </ContactItem>
 
                 <ContactItem>
                   <LocationOn />
-                  <Typography>
-                    Pune, Maharashtra(411033)
-                  </Typography>
+                  <Typography>Pune, Maharashtra(411033)</Typography>
                 </ContactItem>
 
                 <ContactItem>
                   <LinkedIn />
                   <Typography>
-                    <a 
+                    <a
                       href="https://www.linkedin.com/in/aishwarya-jain-b163161b4/"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -138,7 +133,7 @@ const Contact = () => {
                 <ContactItem>
                   <GitHubIcon />
                   <Typography>
-                    <a 
+                    <a
                       href="https://github.com/AishwaryaJain-Web-Developer"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -164,9 +159,8 @@ const Contact = () => {
                   Send Message
                 </Typography>
 
-                <form 
-                // onSubmit={handleSubmit}
-                >
+                <form onSubmit={handleSubmit}>
+                  {/* Changed to onSubmit */}
                   <Grid container spacing={3}>
                     <Grid item xs={12} sm={6}>
                       <StyledTextField
@@ -210,7 +204,7 @@ const Contact = () => {
                           background: 'linear-gradient(45deg, #4CAF50, #2196F3)',
                           '&:hover': {
                             background: 'linear-gradient(45deg, #45a049, #1e88e5)',
-                          }
+                          },
                         }}
                       >
                         Send Message
