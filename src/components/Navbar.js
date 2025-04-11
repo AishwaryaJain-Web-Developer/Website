@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { AppBar, Toolbar, IconButton, Box, Drawer, List, ListItem, ListItemText, useTheme, useMediaQuery } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import { Link } from 'react-scroll';
+import { ThemeToggle } from '../App'; 
 
 const StyledAppBar = styled(AppBar)(({ theme }) => ({
   background: 'rgba(10, 10, 10, 0.95)',
@@ -166,6 +167,7 @@ const NavBar = () => {
             </HamburgerIcon>
           </IconButton>
         )}
+          <ThemeToggle />
       </Toolbar>
 
       {/* Mobile Drawer */}

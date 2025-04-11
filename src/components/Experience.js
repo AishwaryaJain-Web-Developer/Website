@@ -34,14 +34,14 @@ const CompanyLogo = styled('img')({
 
 const Experience = () => {
   const achievements = [
-    "Implemented Order Flow Feature: Designed and developed the order flow feature within the Customer Application's Profile Section",
-    "Led Partner Application Overhaul: Directed the complete redesign and implementation of partner applications",
-    "Developed Custom CRM System: Created a bespoke CRM system tailored to internal requirements",
-    "Built Dynamic Dashboards and Analytics Tools: Developed dynamic dashboards for super admin web applications",
-    "Integrated Backend APIs: Designed and implemented backend API integrations",
-    "Managed Third-Party Integrations: Successfully managed third-party integrations",
-    "Implemented Payment Gateway: Integrated and configured payment gateway solutions",
-    "Implemented Agile Methodologies: Successfully implemented agile methodologies in project development",
+    "Spearheaded the development and implementation of the **Order Flow feature** within the Customer Application's Profile Section, leveraging **React.js** for a seamless user experience.",
+    "Led the complete redesign and implementation of **Partner Applications**, utilizing **Next.js** to enhance performance and SEO capabilities.",
+    "Architected and developed a **bespoke CRM system** tailored to internal requirements, building a user-friendly interface with **React.js**.",
+    "Developed **dynamic dashboards and analytics tools** for super admin web applications, employing **React.js** and data visualization libraries to provide actionable insights.",
+    "Designed and implemented robust **backend API integrations** to facilitate data flow and functionality within **React.js** and **Next.js** applications.",
+    "Successfully managed **third-party integrations**, ensuring seamless connectivity and data exchange with external services.",
+    "Crucially **integrated and configured multiple payment gateway solutions (ICICI, HDFC, and others)** within the application, ensuring secure and efficient transaction processing.",
+    "Successfully implemented **Agile methodologies** in project development, contributing to efficient workflows and timely delivery.",
   ];
 
   return (
