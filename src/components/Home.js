@@ -4,7 +4,6 @@ import Particles from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim";
 import { motion } from 'framer-motion';
 import { styled } from '@mui/material/styles';
-import { Link } from 'react-scroll';
 import DownloadIcon from '@mui/icons-material/Download';
 
 const StyledContainer = styled(Container)(({ theme }) => ({
@@ -108,14 +107,14 @@ const Home = () => {
     link.download = 'Aishwarya-Jain-Resume.pdf';
     document.body.appendChild(link);
     link.click();
-    document.body.removeChild(link);   
+    document.body.removeChild(link);
   };
 
   return (
-    <Box 
-      id="home" 
-      sx={{ 
-        bgcolor: '#0A0A0A', 
+    <Box
+      id="home"
+      sx={{
+        bgcolor: '#0A0A0A',
         position: 'relative',
         minHeight: '100vh',
       }}
@@ -154,7 +153,7 @@ const Home = () => {
           height: '100%'
         }}
       />
-      
+
       <StyledContainer maxWidth="lg">
         <ContentContainer>
           <motion.div
@@ -166,7 +165,7 @@ const Home = () => {
               Hello,
             </ResponsiveTypography>
           </motion.div>
-          
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -176,47 +175,60 @@ const Home = () => {
               I am <GradientText>Aishwarya Jain</GradientText>,
             </ResponsiveTypography>
           </motion.div>
-          
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
             <ResponsiveTypography variant="h2" sx={{ mb: 4 }}>
-              Front End Engineer
+              Frontend Developer
             </ResponsiveTypography>
           </motion.div>
-          
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+          >
+            <ResponsiveTypography variant="h5" sx={{ mb: 4 }}>
+              React.js | Next.js | UI/UX Enthusiast | Team Lead | Payment Gateway Integrations
+            </ResponsiveTypography>
+          </motion.div>
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            <Typography 
-              variant="subtitle1" 
-              sx={{ 
-                mb: 4, 
-                color: '#888', 
+            <Typography
+              variant="subtitle1"
+              sx={{
+                mb: 4,
+                color: '#888',
                 maxWidth: '600px',
                 fontSize: { xs: '1rem', sm: '1.1rem' }
               }}
             >
-              Leveraging my skills, technical knowledge, and solution-oriented mindset to craft seamless user experiences.
+              Frontend Developer with 3+ years of experience in building scalable,
+              responsive web applications using React & Next.js. Experienced in
+              leading teams, optimizing performance, and delivering user-centric
+              solutions.
             </Typography>
           </motion.div>
-          
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
           >
             <ButtonContainer>
-              <Button 
+              <Button
                 variant="outlined"
                 size="large"
                 onClick={scrollToContact}
                 fullWidth={isMobile}
-                sx={{ 
+                sx={{
                   color: '#4CAF50',
                   borderColor: '#4CAF50',
                   '&:hover': {
@@ -227,7 +239,7 @@ const Home = () => {
               >
                 Let's Connect
               </Button>
-              
+
               <Button
                 variant="contained"
                 size="large"

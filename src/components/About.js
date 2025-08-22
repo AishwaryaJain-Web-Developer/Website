@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Typography, Grid, Box, Paper } from '@mui/material';
 import { motion } from 'framer-motion';
-import { BarChart, Timeline, School, Language } from '@mui/icons-material';
+import { BarChart, Timeline, School, Groups, WorkspacePremium } from '@mui/icons-material';
 import { styled } from '@mui/material/styles';
 
 const StyledPaper = styled(Paper)(({ theme }) => ({
@@ -25,24 +25,30 @@ const About = () => {
     },
     {
       icon: <Timeline />,
-      title: 'Organizational Skill',
-      description: 'Excellent project management and time optimization'
+      title: 'Project Management',
+      description: 'Skilled in Agile methodologies, sprint planning and time optimization'
+    },
+    {
+      icon: <Groups />,
+      title: 'Leadership & Mentorship',
+      description: 'Experience in leading teams, code reviews and mentoring junior developers'
     },
     {
       icon: <School />,
-      title: 'Leadership Ability',
-      description: 'Experience in team leadership and project coordination'
-    },
-    {
-      icon: <Language />,
-      title: 'Languages',
-      description: 'Fluent in English and Hindi'
+      title: 'Continuous Learning',
+      description: 'Strong foundation in CS with ongoing skill enhancement (React, Next.js, TypeScript)'
     }
+  ];
+
+  const certifications = [
+    "Advanced Next.js – Udemy (2023)",
+    "React & Redux Mastery – Frontend Masters (2022)"
   ];
 
   return (
     <Box id="about" sx={{ py: 10, bgcolor: '#0A0A0A' }}>
       <Container maxWidth="lg">
+        {/* Section Heading */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -54,7 +60,23 @@ const About = () => {
           </Typography>
         </motion.div>
 
-        <Grid container spacing={4}>
+        {/* Professional Summary */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+        >
+          <Typography variant="body1" sx={{ mb: 6, textAlign: 'center', maxWidth: '800px', mx: 'auto' }}>
+            I am a passionate <strong>Frontend Developer</strong> with 3+ years of experience building scalable, SEO-friendly
+            applications using <strong>React.js, Next.js, Redux, TypeScript</strong> and modern UI libraries. 
+            Skilled in <strong>team leadership, payment gateway integrations (CCAvenue, Razorpay, HDFC, ICICI, Axis Bank)</strong>, 
+            and performance optimization. I thrive in <strong>Agile environments</strong>, collaborating closely with cross-functional teams 
+            to deliver impactful digital solutions.
+          </Typography>
+        </motion.div>
+
+        <Grid container spacing={6}>
           {/* Education Section */}
           <Grid item xs={12} md={6}>
             <motion.div
@@ -116,7 +138,7 @@ const About = () => {
             </motion.div>
           </Grid>
 
-          {/* Strengths Section */}
+          {/* Strengths + Certifications */}
           <Grid item xs={12} md={6}>
             <motion.div
               initial={{ opacity: 0, x: 20 }}
@@ -146,6 +168,18 @@ const About = () => {
                   </Grid>
                 ))}
               </Grid>
+
+              {/* Certifications */}
+              <Box sx={{ mt: 5 }}>
+                <Typography variant="h5" sx={{ mb: 2, color: '#4CAF50', display: 'flex', alignItems: 'center' }}>
+                  <WorkspacePremium sx={{ mr: 1 }} /> Certifications
+                </Typography>
+                {certifications.map((cert, index) => (
+                  <Typography key={index} color="textSecondary" sx={{ mb: 1 }}>
+                    • {cert}
+                  </Typography>
+                ))}
+              </Box>
             </motion.div>
           </Grid>
         </Grid>

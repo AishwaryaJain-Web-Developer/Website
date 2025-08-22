@@ -27,21 +27,21 @@ const CompanyLogo = styled('img')({
   height: '80px',
   objectFit: 'contain',
   marginRight: '20px',
-  backgroundColor: '#fff', // Add background color for better visibility
-  padding: '5px', // Optional padding for spacing
-  borderRadius: '10px', // Optional rounded corners
+  backgroundColor: '#fff',
+  padding: '5px',
+  borderRadius: '10px',
 });
 
 const Experience = () => {
   const achievements = [
-    "Spearheaded the development and implementation of the **Order Flow feature** within the Customer Application's Profile Section, leveraging **React.js** for a seamless user experience.",
-    "Led the complete redesign and implementation of **Partner Applications**, utilizing **Next.js** to enhance performance and SEO capabilities.",
-    "Architected and developed a **bespoke CRM system** tailored to internal requirements, building a user-friendly interface with **React.js**.",
-    "Developed **dynamic dashboards and analytics tools** for super admin web applications, employing **React.js** and data visualization libraries to provide actionable insights.",
-    "Designed and implemented robust **backend API integrations** to facilitate data flow and functionality within **React.js** and **Next.js** applications.",
-    "Successfully managed **third-party integrations**, ensuring seamless connectivity and data exchange with external services.",
-    "Crucially **integrated and configured multiple payment gateway solutions (ICICI, HDFC, and others)** within the application, ensuring secure and efficient transaction processing.",
-    "Successfully implemented **Agile methodologies** in project development, contributing to efficient workflows and timely delivery.",
+    "Led a team of 3 developers, conducting code reviews and mentoring juniors to improve code quality and accelerate delivery.",
+    "Spearheaded the development and implementation of the **Order Flow feature** in the Customer Application, leveraging **React.js** for a seamless UX.",
+    "Redesigned and implemented **Partner Applications** using **Next.js**, improving SEO and boosting page load speed by 30%.",
+    "Built a bespoke **CRM system** for internal use, simplifying workflows for 500+ internal stakeholders.",
+    "Developed **dynamic dashboards and analytics tools** for super admin applications using **React.js** and visualization libraries.",
+    "Integrated and configured multiple payment gateways (**CCAvenue, Razorpay, HDFC, ICICI, Axis Bank**), ensuring secure and efficient transactions.",
+    "Optimized application performance with lazy loading and code splitting, improving Lighthouse performance scores by 25%.",
+    "Collaborated in Agile teams, contributing to sprint planning, requirement gathering, and timely delivery of features.",
   ];
 
   return (
@@ -77,17 +77,17 @@ const Experience = () => {
                       Associate Frontend Engineer
                     </Typography>
                     <Typography variant="subtitle1" color="primary">
-                      Repos Energy Pune
+                      Repos Energy · Pune, India
                     </Typography>
                     <Typography variant="subtitle2" color="textSecondary">
-                      July 2022 - Present
+                      July 2022 – Present
                     </Typography>
                   </Box>
                 </Box>
 
                 <Typography variant="body1" sx={{ mb: 3 }}>
-                  Successfully managed the organization's internal application, overseeing all aspects of order processing,
-                  payment transactions, order status tracking, order flow optimization, and cash flow management.
+                  Managing and enhancing the organization’s internal and customer-facing applications,
+                  with a focus on frontend architecture, secure payments, and performance optimization.
                 </Typography>
 
                 <Typography variant="h6" sx={{ mb: 2, color: '#4CAF50' }}>
