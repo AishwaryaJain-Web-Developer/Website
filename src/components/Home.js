@@ -104,7 +104,7 @@ const Home = () => {
     const resumePath = 'image/resume.pdf';
     const link = document.createElement('a');
     link.href = resumePath;
-    link.download = 'Aishwarya-Jain-Resume.pdf';
+    link.download = 'Aishwarya_Jain_Product_Manager_Abu_Dhabi.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -161,7 +161,7 @@ const Home = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <ResponsiveTypography variant="h2" sx={{ fontWeight: 500 }}>
+            <ResponsiveTypography variant="h3" sx={{ fontWeight: 500 }}>
               Hello,
             </ResponsiveTypography>
           </motion.div>
@@ -171,7 +171,7 @@ const Home = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <ResponsiveTypography variant="h2" sx={{ mb: 2 }}>
+            <ResponsiveTypography variant="h3" sx={{ mb: 2 }}>
               I am <GradientText>Aishwarya Jain</GradientText>,
             </ResponsiveTypography>
           </motion.div>
@@ -181,8 +181,8 @@ const Home = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            <ResponsiveTypography variant="h2" sx={{ mb: 4 }}>
-              Frontend Developer
+            <ResponsiveTypography variant="h3" sx={{ mb: 4 }}>
+              Product Manager | Technical Product Manager
             </ResponsiveTypography>
           </motion.div>
 
@@ -191,8 +191,8 @@ const Home = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            <ResponsiveTypography variant="h5" sx={{ mb: 4 }}>
-              React.js | Next.js | UI/UX Enthusiast | Team Lead | Payment Gateway Integrations
+            <ResponsiveTypography variant="h6" sx={{ mb: 4 }}>
+              Product Strategy | Order & Payment Systems | Agile Delivery | Stakeholder Collaboration | React.js
             </ResponsiveTypography>
           </motion.div>
 
@@ -210,10 +210,11 @@ const Home = () => {
                 fontSize: { xs: '1rem', sm: '1.1rem' }
               }}
             >
-              Frontend Developer with 3+ years of experience in building scalable,
-              responsive web applications using React & Next.js. Experienced in
-              leading teams, optimizing performance, and delivering user-centric
-              solutions.
+              Product-focused professional with 3+ years of experience owning order flows,
+              payment systems, and internal platforms, working closely with engineering,
+              design, and business teams to deliver scalable digital products.
+
+
             </Typography>
           </motion.div>
 
@@ -237,7 +238,7 @@ const Home = () => {
                   }
                 }}
               >
-                Let's Connect
+                Contact Me
               </Button>
 
               <Button

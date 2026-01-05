@@ -34,14 +34,14 @@ const CompanyLogo = styled('img')({
 
 const Experience = () => {
   const achievements = [
-    "Led a team of 3 developers, conducting code reviews and mentoring juniors to improve code quality and accelerate delivery.",
-    "Spearheaded the development and implementation of the **Order Flow feature** in the Customer Application, leveraging **React.js** for a seamless UX.",
-    "Redesigned and implemented **Partner Applications** using **Next.js**, improving SEO and boosting page load speed by 30%.",
-    "Built a bespoke **CRM system** for internal use, simplifying workflows for 500+ internal stakeholders.",
-    "Developed **dynamic dashboards and analytics tools** for super admin applications using **React.js** and visualization libraries.",
-    "Integrated and configured multiple payment gateways (**CCAvenue, Razorpay, HDFC, ICICI, Axis Bank**), ensuring secure and efficient transactions.",
-    "Optimized application performance with lazy loading and code splitting, improving Lighthouse performance scores by 25%.",
-    "Collaborated in Agile teams, contributing to sprint planning, requirement gathering, and timely delivery of features.",
+    "Acted as a Product Owner proxy, working closely with business stakeholders, designers, and engineering teams to define requirements and deliver scalable digital products.",
+    "Owned end-to-end order flow and payment workflows for customer applications, improving transaction success and operational efficiency.",
+    "Led the revamp of Partner Applications by identifying user pain points, defining product requirements, and coordinating UI/UX redesign.",
+    "Conceptualized and delivered a custom internal CRM system, streamlining task management and internal communication across teams.",
+    "Designed and delivered admin dashboards and analytics tools, enabling leadership to make faster, data-driven decisions.",
+    "Collaborated with backend teams to define API contracts, workflows, and edge cases for critical product features.",
+    "Played a key role in integrating and managing multiple payment gateways (CCAvenue, Razorpay, HDFC, ICICI, Axis Bank), ensuring secure and reliable transactions.",
+    "Worked in Agile environments, participating in sprint planning, backlog grooming, reviews, and retrospectives to ensure on-time delivery."
   ];
 
   return (
@@ -68,13 +68,13 @@ const Experience = () => {
             >
               <StyledPaper>
                 <Box sx={{ display: 'flex', alignItems: 'center', mb: 3, flexWrap: 'wrap' }}>
-                  <CompanyLogo 
-                    src="image/Logo.svg" 
+                  <CompanyLogo
+                    src="image/Logo.svg"
                     alt="Repos Energy Logo"
                   />
                   <Box>
                     <Typography variant="h5" sx={{ fontWeight: 600 }}>
-                      Associate Frontend Engineer
+                      Associate Product Manager (Technical)
                     </Typography>
                     <Typography variant="subtitle1" color="primary">
                       Repos Energy · Pune, India
@@ -86,12 +86,13 @@ const Experience = () => {
                 </Box>
 
                 <Typography variant="body1" sx={{ mb: 3 }}>
-                  Managing and enhancing the organization’s internal and customer-facing applications,
-                  with a focus on frontend architecture, secure payments, and performance optimization.
+                  Functioning as a product-focused professional, owning critical business workflows
+                  and collaborating with cross-functional teams to design, build, and optimize
+                  customer-facing and internal digital products.
                 </Typography>
 
                 <Typography variant="h6" sx={{ mb: 2, color: '#4CAF50' }}>
-                  Key Achievements
+                  Key Contributions & Impact
                 </Typography>
 
                 <Grid container spacing={2}>
@@ -101,7 +102,7 @@ const Experience = () => {
                         initial={{ opacity: 0, x: -20 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
-                        transition={{ duration: 0.5, delay: index * 0.1 }}
+                        transition={{ duration: 0.5, delay: index * 0.08 }}
                       >
                         <Box sx={{ display: 'flex', alignItems: 'flex-start', mb: 2 }}>
                           <CheckCircleOutline sx={{ color: '#4CAF50', mr: 1, mt: 0.5 }} />

@@ -43,7 +43,7 @@ const Contact = () => {
     email: '',
     message: '',
   });
-  
+
 
   const handleChange = (e) => {
     setFormData({
@@ -103,8 +103,12 @@ const Contact = () => {
 
                 <ContactItem>
                   <Phone />
-                  <Typography>+91 8349160698</Typography>
+                  <div>
+                    <Typography>+91 8349160698</Typography>
+                    <Typography>+971 524259114</Typography>
+                  </div>
                 </ContactItem>
+
 
                 <ContactItem>
                   <Email />
@@ -113,7 +117,10 @@ const Contact = () => {
 
                 <ContactItem>
                   <LocationOn />
-                  <Typography>Pune, Maharashtra(411033)</Typography>
+                  <div>
+                    <Typography>Pune, Maharashtra(411033)</Typography>
+                    <Typography>Abu Dhabi, UAE</Typography>
+                  </div>
                 </ContactItem>
 
                 <ContactItem>
