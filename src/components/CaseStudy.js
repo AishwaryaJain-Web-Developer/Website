@@ -24,6 +24,7 @@ const CaseStudy = () => {
   return (
     <Box id="caseStudy" sx={{ py: 10, bgcolor: '#0A0A0A' }}>
       <Container maxWidth="lg">
+
         {/* Heading */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -46,54 +47,59 @@ const CaseStudy = () => {
               </Typography>
 
               <Typography variant="subtitle2" color="textSecondary" sx={{ mb: 3 }}>
-                Role: Product Manager (Product Owner Proxy) | Domain: Energy / Logistics
+                Role: Product Manager | Domain: Energy / Logistics (B2B)
               </Typography>
 
               <Grid container spacing={4}>
+
                 <Grid item xs={12} md={6}>
-                  <SectionTitle>Problem</SectionTitle>
+                  <SectionTitle>Problem Statement</SectionTitle>
                   <Typography color="textSecondary">
-                    Customers faced frequent order failures, unclear payment statuses,
-                    and delayed confirmations, leading to poor user experience and
-                    increased operational dependency on support teams.
+                    The customer-facing application handled high-volume B2B orders but
+                    suffered from frequent payment failures, unclear order states, and
+                    delayed confirmations. Operations teams depended heavily on manual
+                    reconciliation, resulting in poor user experience and increased
+                    support overhead.
                   </Typography>
                 </Grid>
 
                 <Grid item xs={12} md={6}>
                   <SectionTitle>Objective</SectionTitle>
                   <Typography color="textSecondary">
-                    Design a seamless, reliable end-to-end order and payment workflow
-                    with real-time tracking and accurate financial reconciliation.
+                    Design a reliable end-to-end order and payment workflow with
+                    predictable lifecycle states, real-time status visibility, and
+                    accurate financial reconciliation.
                   </Typography>
                 </Grid>
 
                 <Grid item xs={12} md={6}>
                   <SectionTitle>My Role</SectionTitle>
                   <Typography color="textSecondary">
-                    • Gathered business and stakeholder requirements<br />
-                    • Defined user journeys, edge cases, and success metrics<br />
-                    • Created user stories & acceptance criteria<br />
-                    • Prioritized features and coordinated Agile delivery<br />
-                    • Collaborated closely with design, backend, and QA teams
+                    • Owned end-to-end order and payment workflows<br />
+                    • Led requirement gathering and stakeholder alignment<br />
+                    • Defined PRDs, user journeys, edge cases, and success metrics<br />
+                    • Created user stories and acceptance criteria<br />
+                    • Worked closely with design, backend, and QA teams in Agile sprints
                   </Typography>
                 </Grid>
 
                 <Grid item xs={12} md={6}>
                   <SectionTitle>Solution</SectionTitle>
                   <Typography color="textSecondary">
-                    Delivered an optimized order flow integrated with multiple secure
-                    payment gateways, automated status updates, and failure-handling
-                    mechanisms to ensure transaction reliability.
+                    Designed and delivered a robust order lifecycle integrated with
+                    secure payment gateways, automated status handling, retry
+                    mechanisms, and failure states. Defined API contracts to ensure
+                    consistency between frontend flows and backend systems.
                   </Typography>
                 </Grid>
 
                 <Grid item xs={12}>
                   <SectionTitle>Impact</SectionTitle>
                   <Typography color="textSecondary">
-                    • Improved transaction success rate<br />
-                    • Reduced manual intervention and support tickets<br />
-                    • Enabled accurate cash-flow tracking and reporting<br />
-                    • Improved customer trust and usability
+                    • Improved operational efficiency by <strong>25–30%</strong><br />
+                    • Reduced manual reconciliation and support tickets<br />
+                    • Improved transaction success rates for high-volume orders<br />
+                    • Increased customer trust through transparent order states
                   </Typography>
                 </Grid>
 
@@ -101,22 +107,27 @@ const CaseStudy = () => {
                   <SectionTitle>Tools & Skills</SectionTitle>
                   <Box sx={{ display: 'flex', gap: 1, flexWrap: 'wrap' }}>
                     {[
-                      'Product Strategy',
-                      'User Stories',
+                      'Product Discovery',
+                      'PRDs & User Stories',
                       'Agile / Scrum',
                       'Payments',
+                      'Order Management',
+                      'API Design',
                       'Stakeholder Management',
-                      'APIs',
                       'Analytics'
                     ].map((skill, idx) => (
                       <Chip
                         key={idx}
                         label={skill}
-                        sx={{ bgcolor: 'rgba(76,175,80,0.15)', color: '#4CAF50' }}
+                        sx={{
+                          bgcolor: 'rgba(76,175,80,0.15)',
+                          color: '#4CAF50',
+                        }}
                       />
                     ))}
                   </Box>
                 </Grid>
+
               </Grid>
             </CasePaper>
           </Grid>
@@ -129,53 +140,67 @@ const CaseStudy = () => {
               </Typography>
 
               <Typography variant="subtitle2" color="textSecondary" sx={{ mb: 3 }}>
-                Role: Product Manager | Domain: Internal Operations
+                Role: Product Manager | Domain: Internal Operations & Analytics
               </Typography>
 
               <Grid container spacing={4}>
+
                 <Grid item xs={12} md={6}>
                   <SectionTitle>Problem</SectionTitle>
                   <Typography color="textSecondary">
-                    Internal teams relied on fragmented tools and manual processes,
-                    resulting in poor visibility, duplicated work, and delayed decisions.
+                    Operations and business teams relied on spreadsheets and
+                    disconnected tools to manage customers, orders, and performance
+                    metrics. This resulted in duplicated work, delayed insights, and
+                    limited real-time visibility for leadership.
                   </Typography>
                 </Grid>
 
                 <Grid item xs={12} md={6}>
                   <SectionTitle>Objective</SectionTitle>
                   <Typography color="textSecondary">
-                    Build a centralized CRM and analytics platform to streamline
-                    operations and provide leadership with actionable insights.
+                    Build a centralized internal CRM and analytics platform to
+                    streamline workflows, reduce manual effort, and enable
+                    data-driven decision-making.
                   </Typography>
                 </Grid>
+
+                {/* <Box sx={{ mt: 3 ,  ml:10}}>
+                  <img
+                    src="https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iVbpYmx6o8.M/v2/-1x-1.webp"
+                    alt="Order & Payment Flow Diagram"
+                    style={{ width: '20%', borderRadius: '12px' }}
+                  />
+                </Box> */}
 
                 <Grid item xs={12} md={6}>
                   <SectionTitle>My Role</SectionTitle>
                   <Typography color="textSecondary">
-                    • Conducted internal stakeholder interviews<br />
-                    • Defined workflows and data requirements<br />
-                    • Prioritized MVP features<br />
-                    • Worked with engineering teams to deliver in phases
+                    • Conducted stakeholder interviews across operations and leadership<br />
+                    • Defined workflows, data models, and reporting needs<br />
+                    • Prioritized MVP features based on impact<br />
+                    • Delivered the platform in phased releases with engineering teams
                   </Typography>
                 </Grid>
 
                 <Grid item xs={12} md={6}>
                   <SectionTitle>Solution</SectionTitle>
                   <Typography color="textSecondary">
-                    Delivered a custom CRM system with dashboards, role-based access,
-                    and real-time reporting tailored to internal business needs.
+                    Delivered a centralized CRM system with role-based access,
+                    standardized workflows, and real-time dashboards. Defined APIs
+                    and reporting structures to support scalable analytics.
                   </Typography>
                 </Grid>
 
                 <Grid item xs={12}>
                   <SectionTitle>Impact</SectionTitle>
                   <Typography color="textSecondary">
-                    • Improved operational efficiency<br />
-                    • Reduced manual tracking and follow-ups<br />
-                    • Enabled data-driven leadership decisions<br />
-                    • Adopted across multiple teams
+                    • Reduced manual tracking effort by <strong>40%</strong><br />
+                    • Improved operational visibility across teams<br />
+                    • Enabled faster, data-driven leadership decisions<br />
+                    • Platform adopted by multiple internal stakeholders
                   </Typography>
                 </Grid>
+
               </Grid>
             </CasePaper>
           </Grid>
