@@ -71,7 +71,7 @@ const About = () => {
           variant="body1"
           sx={{ mb: 8, textAlign: 'center', maxWidth: '800px', mx: 'auto' }}
         >
-          I am a <strong>product-focused professional</strong> with 3+ years of experience
+          I am a <strong>product-focused professional</strong> with 4+ years of experience
           working at the intersection of <strong>business, design, and engineering</strong>.
           I have owned <strong>end-to-end product workflows</strong> including order
           management, payment systems, internal tools, and analytics dashboards in Agile

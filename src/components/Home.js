@@ -104,7 +104,7 @@ const Home = () => {
     const resumePath = 'image/resume.pdf';
     const link = document.createElement('a');
     link.href = resumePath;
-    link.download = 'Aishwarya_Jain_Product_Manager_Abu_Dhabi.pdf';
+    link.download = 'AishwaryaJain_TPM_Resume.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -182,7 +182,7 @@ const Home = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
           >
             <ResponsiveTypography variant="h3" sx={{ mb: 4 }}>
-              Product Manager | Technical Product Manager
+             Technical Product Manager
             </ResponsiveTypography>
           </motion.div>
 
@@ -210,7 +210,7 @@ const Home = () => {
                 fontSize: { xs: '1rem', sm: '1.1rem' }
               }}
             >
-              Product-focused professional with 3+ years of experience owning order flows,
+              Product-focused professional with 4+ years of experience owning order flows,
               payment systems, and internal platforms, working closely with engineering,
               design, and business teams to deliver scalable digital products.
 
